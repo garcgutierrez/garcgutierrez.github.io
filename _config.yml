@@ -9,7 +9,7 @@ version: 2
 name: Adrián García-Gutiérrez
 title: Lecturer
 email: a.gutierrez@unileon.es
-webpage: uleia.unileon.es
+website: uleia.unileon.es
 
 # Dark Mode (true/false/never)
 darkmode: false
