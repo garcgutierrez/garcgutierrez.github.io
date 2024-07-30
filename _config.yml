@@ -9,7 +9,7 @@ version: 2
 name: Adrián García-Gutiérrez
 title: Lecturer
 email: a.gutierrez@unileon.es
-
+webpage: uleia.unileon.es
 
 # Dark Mode (true/false/never)
 darkmode: false
@@ -22,7 +22,7 @@ github_username:  garcgutierrez
 # facebook_username: jekyll
 # flickr_username: jekyll
 #instagram_username: jameswgrant
-linkedin_username: adrián-garcía-gutiérrez-621945248/
+linkedin_username: adrián-garcía-gutiérrez-621945248
 # xing_username: jekyll
 # pinterest_username: jekyll
 #youtube_username: globalmtb
@@ -32,7 +32,7 @@ orcid_username: 0000-0001-6790-3907
 # Additional icon links
 additional_links:
 - title: PortalCientífico
-  icon: fa-brands fa-dart-lang
+  icon: fab fa-dart-lang
   url: https://portalcientifico.unileon.es/investigadores/97473/detalle
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
