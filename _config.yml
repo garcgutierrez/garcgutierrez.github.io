@@ -34,9 +34,7 @@ additional_links:
 - title: PortalCientífico
   icon: fab fa-trello
   url: https://portalcientifico.unileon.es/investigadores/97473/detalle
- - title: PortalCientífico
-  icon: fab fa-twitter
-  url: https://portalcientifico.unileon.es/investigadores/97473/detalle
+
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
