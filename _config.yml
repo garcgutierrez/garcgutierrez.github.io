@@ -50,11 +50,11 @@ additional_links:
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, my name's Adrián, and I'm a lecturer at the University of León. I teach courses in Aerodynamics, Helicopters, and Computational Fluid Dynamics as part of the Aerospace Engineering degree program. I’ve also had the opportunity to participate in research projects with some of the most prominent companies in the aerospace sector, including Boeing, GMV, and Indra.
-  My research focuses on Computational Fluid Dynamics (<mark>CFD</mark>), <mark>low Reynolds number aerodynamics</mark>, and <mark>stochastic design</mark>.
+  My research focuses on <mark>CFD</mark>, <mark>low Reynolds Number Aerodynamics</mark>, and <mark>Stochastic Design</mark>.
 
 
 content:
-  - title: Projects # Title for the section
+  - title: Papers # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
@@ -68,27 +68,27 @@ content:
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
-        title: On the capabilities and limitations of high altitude pseudo-satellites
-        link: doi.org/10.1016/j.paerosci.2018.03.006
+        title: Estimating Landfill Landslide Probability Using SAR Satellite Products
+        link: mdpi.com/2072-4292/16/9/1618
         link_text: Link
         description: | # this will include new lines to allow paragraphs
-          The idea of self-sustaining air vehicles that excited engineers in the seventies has nowadays become a reality as proved by several initiatives worldwide. High altitude platforms, or Pseudo-satellites (HAPS), are unmanned vehicles that take advantage of weak stratospheric winds and solar energy to operate without interfering with current commercial aviation and with enough endurance to provide long-term services as satellites do. Target applications are communications, Earth observation, positioning and science among others. This paper reviews the major characteristics of stratospheric flight, where airplanes and airships will compete for best performance. The careful analysis of involved technologies and their trends allow budget models to shed light on the capabilities and limitations of each solution. Aerodynamics and aerostatics, structures and materials, propulsion, energy management, thermal control, flight management and ground infrastructures are the critical elements revisited to assess current status and expected short-term evolutions. Stratospheric airplanes require very light wing loading, which has been demonstrated to be feasible but currently limits their payload mass to few tenths of kilograms. On the other hand, airships need to be large and operationally complex but their potential to hover carrying hundreds of kilograms with reasonable power supply make them true pseudo-satellites with enormous commercial interest. This paper provides useful information on the relative importance of the technology evolutions, as well as on the selection of the proper platform for each application or set of payload requirements. The authors envisage prompt availability of both types of HAPS, aerodynamic and aerostatic, providing unprecedented services.
-
+          This article presents a methodology for evaluating the susceptibility of landfill areas to develop landslides by analyzing Synthetic Aperture Radar (SAR) satellite products. The deformation velocity of the landfills is computed through the Persistent Scatterer Method on SAR imagery. These data, combined with a deformation model based on the shallow water equations (SWE), form the foundation for a Monte Carlo experiment that extrapolates the current state of the landfill into the future. The results of this simulation are then employed to determine the probability of a landslide occurrence. In order to validate the methodology effectiveness, a case study is conducted on a landfill in Zaldibar, Spain, revealing its effectiveness in estimating the probability of landfill landslides. This innovative approach emerges as an asset in large landfill management, acting as a proactive tool for identifying high-risk sites and preventing potential landslides, ultimately safeguarding human life and the environment. By providing insights into landslide probabilities, this study enhances decision-making processes and facilitates the development of intervention strategies in the domain of landfill risk assessment and management.
+          
   - title: Education
     layout: list
     content:
       - layout: top-right
-        title: University of León
-        sub_title: BSc Aerospace Science
+        title: BSc Aerospace Science
+        sub_title: University of León
         caption: 2011 - 2015
         #quote: >
         #  Short institution or course description (optional)
         #description: | # this will include new lines to allow paragraphs
         #  Description of qualification
           
-      - layout: top-right
-        title: UNED
-        sub_title: BSc Mathematics
+      - layout: top-left
+        title: BSc Mathematics
+        sub_title: UNED
         caption: 2016 - 2020
         #quote: >
         #  Short institution or course description (optional)

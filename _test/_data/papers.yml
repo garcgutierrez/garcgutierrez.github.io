@@ -1,0 +1,12 @@
+# Project template
+- layout: top-middle
+  name: Paper
+  link: https://sproogen.github.io/modern-resume-theme
+  quote: >
+    Short overview of the project
+  description: >
+    Description about the work on/with the project
+
+- name: Paper 2
+  description: >
+    Description about the work on/with the project
