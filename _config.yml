@@ -49,8 +49,7 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-Hi, my name's Adrián, and I'm a lecturer at the University of León. I teach courses in "Aerodynamics," "Helicopters," and "Computational Fluid Dynamics" as part of the Aerospace Engineering degree program. I’ve also had the opportunity to participate in research projects with some of the most prominent companies in the aerospace sector, including Boeing, GMV, and Indra.
-
+Hi, my name's Adrián, and I'm a lecturer at the University of León. I teach courses in Aerodynamics, Helicopters, and Computational Fluid Dynamics as part of the Aerospace Engineering degree program. I’ve also had the opportunity to participate in research projects with some of the most prominent companies in the aerospace sector, including Boeing, GMV, and Indra.
 My research focuses on Computational Fluid Dynamics (<mark>CFD</mark>), <mark>low Reynolds number aerodynamics</mark>, and <mark>stochastic design</mark>.
 
 content:
