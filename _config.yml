@@ -32,7 +32,7 @@ orcid_username: 0000-0001-6790-3907
 # Additional icon links
 additional_links:
 - title: PortalCientífico
-  icon: fab fa-twitter
+  icon: fab fa-trello
   url: https://portalcientifico.unileon.es/investigadores/97473/detalle
  - title: PortalCientífico
   icon: fab fa-twitter
