@@ -53,17 +53,26 @@ about_content: | # this will include new lines to allow paragraphs
   My research focuses on Computational Fluid Dynamics (<mark>CFD</mark>), <mark>low Reynolds number aerodynamics</mark>, and <mark>stochastic design</mark>.
 
 content:
-  - title: Papers # Title for the section
+  - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: top-middle
-        title: On the capabilities and limitations of high altitude pseudo-satellites
-        link: doi.org/10.1016/j.paerosci.2018.03.006
-        # link_text: Project Website
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: Project name
+        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        link_text: Link Text
+        additional_links:
+          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+            icon: fab fa-github
+            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+            icon: fab fa-github
+            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        quote: >
+          Short overview of the project (optional)
         description: | # this will include new lines to allow paragraphs
-          The idea of self-sustaining air vehicles that excited engineers in the seventies has nowadays become a reality as proved by several initiatives worldwide. High altitude platforms, or Pseudo-satellites (HAPS), are unmanned vehicles that take advantage of weak stratospheric winds and solar energy to operate without interfering with current commercial aviation and with enough endurance to provide long-term services as satellites do. Target applications are communications, Earth observation, positioning and science among others. This paper reviews the major characteristics of stratospheric flight, where airplanes and airships will compete for best performance. The careful analysis of involved technologies and their trends allow budget models to shed light on the capabilities and limitations of each solution. Aerodynamics and aerostatics, structures and materials, propulsion, energy management, thermal control.
-
-        
+          Description about the work on/with the project   
 
 
 # Footer
