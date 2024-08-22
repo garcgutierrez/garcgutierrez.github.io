@@ -62,7 +62,6 @@ content:
         # link_text: Project Website
         description: | # this will include new lines to allow paragraphs
           The idea of self-sustaining air vehicles that excited engineers in the seventies has nowadays become a reality as proved by several initiatives worldwide. High altitude platforms, or Pseudo-satellites (HAPS), are unmanned vehicles that take advantage of weak stratospheric winds and solar energy to operate without interfering with current commercial aviation and with enough endurance to provide long-term services as satellites do. Target applications are communications, Earth observation, positioning and science among others. This paper reviews the major characteristics of stratospheric flight, where airplanes and airships will compete for best performance. The careful analysis of involved technologies and their trends allow budget models to shed light on the capabilities and limitations of each solution. Aerodynamics and aerostatics, structures and materials, propulsion, energy management, thermal control …
-      - layout: top-middle
         title: Estimating Landfill Landslide Probability Using SAR Satellite Products
         link: mdpi.com/2072-4292/16/9/1618
         # link_text: Project Website
@@ -74,8 +73,6 @@ content:
           The research leading to these results received funding from the European Space Agency under the Contract No. 4000138806/22/I-DT-bgh (EOP—Future EO Open Call for Proposals).
         description: | # this will include new lines to allow paragraphs
           This article presents a methodology for evaluating the susceptibility of landfill areas to develop landslides by analyzing Synthetic Aperture Radar (SAR) satellite products. The deformation velocity of the landfills is computed through the Persistent Scatterer Method on SAR imagery. These data, combined with a deformation model based on the shallow water equations (SWE), form the foundation for a Monte Carlo experiment that extrapolates the current state of the landfill into the future. The results of this simulation are then employed to determine the probability of a landslide occurrence. In order to validate the methodology effectiveness, a case study is conducted on a landfill in Zaldibar, Spain, revealing its effectiveness in estimating the probability of landfill landslides. This innovative approach emerges as an asset in large landfill management, acting as a proactive tool for identifying high-risk sites and preventing potential landslides, ultimately safeguarding human life and the environment. By providing insights into landslide probabilities, this study enhances decision-making processes and facilitates the development of intervention strategies in the domain of landfill risk assessment and management.
-
-  
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
