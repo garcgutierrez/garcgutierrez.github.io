@@ -47,11 +47,15 @@ additional_links:
 
 # About Section
 # about_title: About Me
-about_profile_image: images/profile.jpg
+about_profile_image: Directory of profile image (eg. images/profile.jpg)
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Adrián, and I'm a lecturer at the University of León. I teach courses in Aerodynamics, Helicopters, and Computational Fluid Dynamics as part of the Aerospace Engineering degree program. I’ve also had the opportunity to participate in research projects with some of the most prominent companies in the aerospace sector, including Boeing, GMV, and Indra.
-  My research focuses on Computational Fluid Dynamics (<mark>CFD</mark>), <mark>low Reynolds number aerodynamics</mark>, and <mark>stochastic design</mark>.
+  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
 
+  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
+    - Lists
+    - Tables
+    - <a href="google.com">Links</a>
+    - Images ![alt text](/images/landscape-trees.jpg "Trees")
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
