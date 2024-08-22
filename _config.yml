@@ -58,10 +58,10 @@ content:
     content:
       - layout: left
         title: University of León
-        caption: 2011 - 2015
+        caption: 2011  2015
         sub_title: BSc Aerospace Science
       - title: UNED
-        caption: 2016 - 2020
+        caption: 2016  2020
         sub_title: BSc Mathematics
         
 
