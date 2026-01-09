@@ -1,12 +1,137 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Avión - Aerodinámica</title>
+    <style>
+        body { 
+            margin: 0; 
+            background: black;
+            font-family: Arial;
+        }
+        #canvas { 
+            display: block; 
+            width: 100vw; 
+            height: 100vh;
+        }
+        #info {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            background: rgba(0,0,0,0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Hello from GitHub Pages!</h1>
-  <p>This is a test page.</p>
+    <div id="info">
+        <h2>AR Educativo - Avión</h2>
+        <p>Apunta al avión...</p>
+    </div>
+
+    <!-- Cargar Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <script>
+        // 1. CONFIGURAR ESCENA 3D
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(
+            75, 
+            window.innerWidth / window.innerHeight, 
+            0.1, 
+            1000
+        );
+        const renderer = new THREE.WebGLRenderer({ 
+            antialias: true,
+            alpha: true 
+        });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setClearColor(0x000000, 0.1);
+        document.body.appendChild(renderer.domElement);
+
+        // 2. ACCEDER A CÁMARA DEL MÓVIL
+        const video = document.createElement('video');
+        video.autoplay = true;
+        video.playsInline = true;
+        
+        navigator.mediaDevices.getUserMedia({ 
+            video: { facingMode: 'environment' } 
+        }).then(stream => {
+            video.srcObject = stream;
+        }).catch(err => {
+            console.error('Error cámara:', err);
+            alert('Debes permitir acceso a cámara');
+        });
+
+        // 3. AGREGAR ILUMINACIÓN
+        const light = new THREE.PointLight(0xffffff, 1, 100);
+        light.position.set(10, 10, 10);
+        scene.add(light);
+        
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+        scene.add(ambientLight);
+
+        // 4. CREAR ELEMENTOS 3D
+        
+        // Cubo ejemplo (reemplazar con modelo avión después)
+        const geometry = new THREE.BoxGeometry(2, 2, 2);
+        const material = new THREE.MeshStandardMaterial({ 
+            color: 0x00ff00,
+            emissive: 0x00aa00
+        });
+        const cube = new THREE.Mesh(geometry, material);
+        cube.position.z = -5;
+        scene.add(cube);
+
+        // Vectores de fuerzas (flechas)
+        const arrowHelper1 = new THREE.ArrowHelper(
+            new THREE.Vector3(0, 1, 0),  // dirección hacia arriba = sustentación
+            new THREE.Vector3(-2, 0, -5),  // posición
+            3,  // longitud
+            0xff0000  // color rojo
+        );
+        scene.add(arrowHelper1);
+
+        // Etiqueta de texto
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        canvas.width = 512;
+        canvas.height = 256;
+        context.fillStyle = 'rgba(0, 255, 0, 0.8)';
+        context.font = 'Bold 48px Arial';
+        context.fillText('SUSTENTACION', 50, 100);
+        context.fillText('L = W (equilibrio)', 50, 170);
+        
+        const texture = new THREE.CanvasTexture(canvas);
+        const planeMat = new THREE.MeshBasicMaterial({ map: texture });
+        const plane = new THREE.Mesh(
+            new THREE.PlaneGeometry(8, 4),
+            planeMat
+        );
+        plane.position.z = -4;
+        scene.add(plane);
+
+        // 5. ANIMACIÓN
+        function animate() {
+            requestAnimationFrame(animate);
+            
+            // Girar el cubo
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
+            
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        // 6. RESPONSIVE
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    </script>
 </body>
 </html>
