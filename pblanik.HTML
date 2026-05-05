@@ -920,6 +920,11 @@ Recorre el avión siguiendo estos puntos:
         let ultimoTiempoDeteccion = 0;
         const TIEMPO_PERSISTENCIA = 1800;
 
+        // Reutilizamos un canvas auxiliar para no crearlo en cada fotograma.
+        const tempCanvas = document.createElement('canvas');
+        const tempCtx = tempCanvas.getContext('2d', { willReadFrequently: true });
+        const jsQRScanOptions = { inversionAttempts: 'attemptBoth' };
+
         // ============ INICIO CÁMARA + LOOP QR ============
         navigator.mediaDevices.getUserMedia({
             video: { facingMode: 'environment' }
@@ -940,14 +945,14 @@ Recorre el avión siguiendo estos puntos:
             const ahora = performance.now();
 
             if (video.readyState === video.HAVE_ENOUGH_DATA) {
-                const tempCanvas = document.createElement('canvas');
-                const tempCtx = tempCanvas.getContext('2d');
-                tempCanvas.width = video.videoWidth;
-                tempCanvas.height = video.videoHeight;
+                if (tempCanvas.width !== video.videoWidth || tempCanvas.height !== video.videoHeight) {
+                    tempCanvas.width = video.videoWidth;
+                    tempCanvas.height = video.videoHeight;
+                }
                 tempCtx.drawImage(video, 0, 0, tempCanvas.width, tempCanvas.height);
                 const imageData = tempCtx.getImageData(0, 0, tempCanvas.width, tempCanvas.height);
 
-                const qrCode = jsQR(imageData.data, imageData.width, imageData.height);
+                const qrCode = jsQR(imageData.data, imageData.width, imageData.height, jsQRScanOptions);
 
                 if (qrCode) {
                     const contenido = qrCode.data.trim();
